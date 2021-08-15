@@ -1,0 +1,99 @@
+body{
+    text-align: center;
+}
+
+h1{
+    font-family: verdana;
+}
+.side_bar{
+    margin: auto;
+}
+
+.block{
+    display: block;
+    width: 430px;
+    height: 160px;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 3px;
+    justify-content: left;
+    background: linear-gradient(to right, rgb(230, 176, 236), rgb(187, 140, 201), rgb(176,82,202),rgb(230, 176, 236));
+}
+.block-style{
+    display: block;
+    width: 600px;
+    height: 350px;
+    border: 1px solid;
+    margin: auto;
+    background: linear-gradient(to top right,pink, rgb(230, 176, 236), rgb(187, 140, 201), rgb(176,82,202),rgb(230, 176, 236),pink);
+}
+label {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: right;
+    width: 400px;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+  
+input {
+    width: 300px;
+    height: 20px;
+    flex: 0 0 250px;
+    margin-left: 10px;
+  }
+#submit-btn{
+    width: 100px;
+    height: 30px;
+    border: 1px solid blue;
+    padding: 5px;
+    margin:auto;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+#submit-btn:hover{
+    background: linear-gradient(to bottom, rgb(218, 152, 212), rgb(130, 130, 196));
+}
+@media only screen and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+    .block-style{
+        width: 400px;
+    }
+    .block{
+        width: 300px;
+    }
+    .side_bar{
+        width: auto;
+    }
+}
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+    .block-style{
+        width: 400px;
+    }
+    .block{
+        width: 300px;
+    }
+    .side_bar{
+        width: auto;
+    }
+}
+@media only screen and (max-width: 425px){
+	/*Small smartphones [325px -> 425px]*/
+    .block-style{
+        width: 250px;
+    }
+    .block{
+        width: 150px;
+    }
+    .side_bar{
+        width: auto;
+    }
+    #output-box{
+        width: 40px;
+        height: 10px;
+    }
+}
