@@ -1,5 +1,7 @@
 body{
     text-align: center;
+    background: linear-gradient(to top right,pink, rgb(230, 176, 236), rgb(187, 140, 201), rgb(176,82,202),rgb(230, 176, 236),pink);
+    background-size: 100% 400%;
 }
 
 h1{
@@ -23,9 +25,7 @@ h1{
 }
 .block-style{
     display: block;
-    width: 600px;
-    height: 350px;
-    border: 1px solid;
+    height: 500%;
     margin: auto;
     background: linear-gradient(to top right,pink, rgb(230, 176, 236), rgb(187, 140, 201), rgb(176,82,202),rgb(230, 176, 236),pink);
 }
