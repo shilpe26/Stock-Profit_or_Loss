@@ -27,7 +27,7 @@ h1{
     display: block;
     height: 500%;
     margin: auto;
-    background: linear-gradient(to top right,pink, rgb(230, 176, 236), rgb(187, 140, 201), rgb(176,82,202),rgb(230, 176, 236),pink);
+    /* background: linear-gradient(to top right,pink, rgb(230, 176, 236), rgb(187, 140, 201), rgb(176,82,202),rgb(230, 176, 236),pink); */
 }
 label {
     display: flex;
