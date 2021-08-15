@@ -40,9 +40,8 @@ label {
   }
   
 input {
-    width: 300px;
     height: 20px;
-    flex: 0 0 250px;
+    flex: 0 0 200px;
     margin-left: 10px;
   }
 #submit-btn{
@@ -57,43 +56,17 @@ input {
 #submit-btn:hover{
     background: linear-gradient(to bottom, rgb(218, 152, 212), rgb(130, 130, 196));
 }
-@media only screen and (max-width: 1200px){
-    /*Tablets [601px -> 1200px]*/
+
+@media screen and (max-width: 768px){
     .block-style{
-        width: 400px;
+        width: 430px;
     }
     .block{
         width: 300px;
     }
-    .side_bar{
-        width: auto;
+    
+    input{
+        flex: 0 0 80px;
     }
-}
-@media only screen and (max-width: 600px){
-	/*Big smartphones [426px -> 600px]*/
-    .block-style{
-        width: 400px;
-    }
-    .block{
-        width: 300px;
-    }
-    .side_bar{
-        width: auto;
-    }
-}
-@media only screen and (max-width: 425px){
-	/*Small smartphones [325px -> 425px]*/
-    .block-style{
-        width: 250px;
-    }
-    .block{
-        width: 150px;
-    }
-    .side_bar{
-        width: auto;
-    }
-    #output-box{
-        width: 40px;
-        height: 10px;
-    }
+    
 }
