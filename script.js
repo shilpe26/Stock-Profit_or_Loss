@@ -5,31 +5,24 @@ var submitBtn = document.querySelector('#submit-btn');
 var outputBox = document.querySelector('#output-box');
 
 submitBtn.addEventListener('click',submitHandler);
-out.document.querySelector('#submit-btn').style.cssText = `width: 300px;
-height: 30px;
-border: 1px solid blue;
-padding: 20px;
-margin:auto;
-margin-top: 10px;
-font-size: 20px;
-text-align: center;
-background: linear-gradient(to bottom, rgb(58, 180, 228), rgb(130, 130, 196));
-border-radius: 10px;`;
 function submitHandler(){
     var ip = Number(initialPrice.value);
     var qty = Number(stockQuantity.value);
     var curr = Number(currentPrice.value);
-    document.querySelector('#output-box').style.cssText = `width: 300px;
-    height: 30px;
-    border: 1px solid blue;
+    if(ip&&qty&&curr){
+        calculateProfitAndLoss(ip,qty,curr);
+    }else{
+        showOutput(`Please fill all the fields! 🙄`);
+    }
+    document.querySelector('#output-box').style.cssText = ` width: 80%;
+    height: 3rem;
+    border: 2px solid black;
     padding: 20px;
-    margin:auto;
-    margin-top: 10px;
+    margin: 10px auto auto;
     font-size: 20px;
     text-align: center;
-    background: linear-gradient(to bottom, pink, rgb(130, 130, 196));
+    background: rgba(0, 0, 0, 0) linear-gradient(pink, rgb(130, 130, 196)) repeat scroll 0% 0%;
     border-radius: 10px;`;
-    calculateProfitAndLoss(ip,qty,curr);
 }
 
 function calculateProfitAndLoss(initial, quantity, current) {

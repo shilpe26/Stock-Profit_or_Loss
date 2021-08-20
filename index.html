@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon-32x32.png">
+    <link rel="icon" href="images/icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <title>Stocks Protif & Loss</title>
 </head>
+
 <body>
-    <h1>Stocks Protif &amp; Loss</h1>
+    <h1>Stocks Protif and Loss</h1>
     <main>
-        <div class="block-style">
-        <div class="block">
-        <label for="initial_price">Initial Price
-        <input type="number" id="initial_price" class="side_bar" placeholder="Enter Initial Price"/></label>
-        <label for="stocks_quantity">Stock Quantity
-        <input type="number" id="stocks_quantity" class="side_bar" placeholder="Enter the number of Stocks bought"/></label>
-        <label for="current_price">Current Price
-        <input type="number" id="current_price" class="side_bar" placeholder="Enter Curent Price of Stocks"/></label>
+        <div class="fields">
+            <label for="initial_price">Initial Price</label>
+            <input type="number" id="initial_price" class="side_bar" />
+        </div>
+        <div class="fields">
+            <label for="stocks_quantity">Stock Quantity</label>
+            <input type="number" id="stocks_quantity" class="side_bar" />
+        </div>
+        <div class="fields">      
+            <label for="current_price">Current Price</label>
+            <input type="number" id="current_price" class="side_bar" />
+        </div>
 
         <button id="submit-btn">Tell Me!!</button>
-        </div>
 
         <div id="output-box"></div>
-        </div>
     </main>
     <script src="script.js"></script>
 </body>
+
 </html>
